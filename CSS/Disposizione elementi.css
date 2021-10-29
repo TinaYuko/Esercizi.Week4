@@ -1,0 +1,40 @@
+﻿body {
+}
+ h1 {
+     display: inline;
+ }
+ /*Selezione h1 dopo il tag con id logo */
+ #logo +h1 {
+     display: inline;
+ }
+ .displayNone {
+     display: none;
+ }
+ .VisHidden {
+     visibility:hidden;
+ }
+
+ #ImgP {
+     float: left
+ }
+
+ #div1 {
+     border: 2px solid red;
+         float: left;
+         width:200px;
+ }
+#div2 {
+    border: 2px solid green;
+    float: left;
+}
+#div3 {
+    border: 2px solid blue;
+    float: left;
+}
+#clear {
+    border: 2px solid orange;
+    clear: left;
+}
+#par {
+         padding: 10px 20px 30px 40px;
+     }

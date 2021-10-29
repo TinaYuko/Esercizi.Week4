@@ -1,0 +1,95 @@
+﻿body {
+    background-color:antiquewhite;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media screen and (max-width: 600px) {
+     nav {
+         float: none;
+         width:100%;
+     }
+     #image {
+         display:none;
+     }
+}
+
+
+#logo
+{
+    float: left;
+}
+
+h2, h3, h5 {
+    color: darkgray;
+}
+h5::first-letter{
+    color: black}
+h3::first-letter {
+        color: black}
+h2::first-letter {
+        color: black}
+#image{
+    width:100%;
+}
+
+nav {
+    clear: left;
+    background-color: burlywood;
+    padding: 10px;}
+#div2 {
+    clear: left;
+    background-color: burlywood;
+    padding: 10px;
+}
+#div1 {
+    border: 1px solid green;
+    float: left;
+    width: 1000px;
+    height: 200px;
+    text-align: center;
+    background-color: burlywood;}
+#rig1 {
+    background-color: burlywood;}
+#rig1:hover {
+        background-color: palegoldenrod;}
+tr:nth-child(odd) {
+    background-color: antiquewhite;}
+tr:hover{
+    background-color:palegoldenrod;
+}
+#form {
+    float: left;
+    padding: 30px 100px 10px 30px;}
+
+#button {
+    border-radius: 20px;
+}
+footer {
+    clear: left;
+    margin-top: 100px;
+    background-color: palegoldenrod;
+    padding: 10px;
+}
+
+#loginButton
+{
+    float: right;
+}
+#logoutButton {
+    float: right;
+}
+
+header {
+    color: darkgray;
+    background-color: palegoldenrod;
+    border: 5px solid burlywood;
+    font-size: medium;
+}
+
+#guestbook {
+   float: right;
+    height: 350px;
+}
+
+#s1{
+    text-align:right;
+}

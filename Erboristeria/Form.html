@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <label>Nome</label>
+        <input type="text" placeholder="Nome" />
+        <br /><br />
+        <label>Cognome</label>
+        <input type="text" placeholder="Cognome" required />
+        <br /><br />
+        <label>Sesso</label>
+        <select>
+            <option value="">Seleziona un'opzione</option>
+            <option value="1">F</option>
+            <option value="2">M</option>
+            <option value="3">Non Dichiarato</option>
+        </select>
+        <br /> <br />
+        <label>Sesso</label>
+        <label><input type="radio" name="Sesso" value="1" />F</label>
+        <label><input type="radio" name="Sesso" value="2" />M</label>
+        <label><input type="radio" name="Sesso" value="3" />Non Dichiarato</label>
+        <br /> <br />
+        <label>Skills</label>
+        <label><input type="checkbox" value="1"/>C#</label>
+        <label><input type="checkbox" value="2"/>Html5</label>
+        <label><input type="checkbox" value="3"/>SQL</label>
+        <br /> <br />
+        <label>Password</label>
+        <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+               title="Minimum eight characters, at least one uppercase letter, one lowercase letter and one number" />
+        <input type="submit" value="Registrati" />
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <!--<script>alert("Ciao a tutte!");
+    /script><-->
+    <script src="JavaScript.js"></script>
+</head>
+<body> <!--onload="demoOnLoad()"-->
+
+    <!--<script>
+    alert("Buongiorno!");
+    </script>-->
+    <!--miaFunzione();-->
+
+   
+    <button onclick="demoOnClick()">Cliccami!</button>
+
+    <div style="background-color:aqua" onmouseover="this.style.backgroundColor='green'" 
+         onmouseout="this.style.backgroundColor='red'"><p>Ciao</p></div>
+    <input type="text" onkeydown="demoOnKeyDown()" />
+
+    <select id="role" onchange="demoOnChange()">
+        <option value="">Seleziona un ruolo</option>
+        <option value="Developer">Developer</option>
+        <option value="Manager">Manager</option>
+        <option value="Technician">Technician</option>
+    </select>
+    <label>
+        <input class="checkBox" type="checkbox" onchange="checkSelection()" />
+    </label>
+
+</body>
+</html>

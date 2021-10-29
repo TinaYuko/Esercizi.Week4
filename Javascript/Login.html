@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <script src="Login.js"></script>
+</head>
+<body onload="checkLoggedUser()">
+    <form onsubmit="save()"; hideForm()>
+        <label>Username</label>
+        <input class="input" type="text" placeholder="Inserisci Username" onchange="changeLoginPage()"
+               required />
+        <label>Password</label>
+        <input class="input" type="password" placeholder="Inserisci Password" onchange="changeLoginPage()" 
+               required/>
+
+        <input type="submit" value="Login" disabled />
+
+
+    </form>
+
+    <button id="logoutButton" type="button" value="Logout" style="display:none" onclick="logout()">Logout</button>
+</body>
+</html>

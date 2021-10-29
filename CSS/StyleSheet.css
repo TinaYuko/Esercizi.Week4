@@ -1,0 +1,55 @@
+﻿body {
+    background-color: darkolivegreen;
+
+}
+#logo {
+    width: 140px;
+    height: 240px;
+    border: dotted;
+    border-color: aquamarine;
+}
+
+h1{
+    color: floralwhite;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+p {
+    color: antiquewhite
+}
+
+.center {
+    text-align:center;
+}
+.right {
+   text-align: right;
+}
+/*Selettore combinato*/
+p, .danger {
+    border: 3px solid white;
+}
+/*Seleziona tutti i p figli di div*/
+
+div p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+/*figli di div non innestati*/
+div > p {
+    font-size: 20px;
+}
+/*Pseudo stati*/
+a:visited{
+    color: ghostwhite
+}
+a:hover{
+    color: beige;
+    background-color:saddlebrown;
+}
+
+/*Pseudo Elemento*/
+p::first-letter {
+    color:#233602
+}
+p:hover {
+    background-color: salmon;
+}
