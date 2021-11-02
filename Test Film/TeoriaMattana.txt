@@ -1,0 +1,85 @@
+1. A partire da un esempio (diverso da quello nel materiale fornito), descrivere tutti i livelli che
+costituiscono un dominio.
+
+RISPOSTA:
+https://www.training.icubed.it/
+
+- https è il protocollo di trasmissione dei dati, in questo caso le informazioni vengono criptate (a differenza di http)
+- www individua il sistema del World Wide Web
+- training: Livello 1. Ovvero l'host, chi organizza internamente
+- icubed: Livello 2. Ovvero il nome user-friendly in cui vengono permutati gli indirizzi ip dal dns
+- it: Livello 3. Uno dei suffissi del Top Level Domain, gestito dall'organizzazione IANA.
+
+2. Quale tra le seguenti combinazioni attributo-valore rende valido il seguente tag HTML?
+<img attributo=”valore”>
+Opzioni per attributo:
+a) url
+b) href
+c) src
+d) source
+Opzioni per valore:
+a) www.fruit.com/fruit.png
+b) http://www.fruit.com
+c) http://www.fruit.com/fruit.png
+
+RISPOSTA: 
+c + c
+
+infatti, prendendo esempio dalla pagina scritta oggi:
+<img src="https://pad.mymovies.it/filmclub/2009/09/193/coverlg_home.jpg"/>
+
+3. Osservando la pagina HTML sotto (dopo la domanda 4), indicare i selettori che consentono
+di selezionare tutti gli elementi li.
+
+RISPOSTA: 
+li {}
+.color {}
+ul * li {}
+ul li {}
+
+4. Osservando la pagina HTML sotto, scrivere la regola CSS che consente di cambiare il colore
+di background (con la stessa regola!) sia dell’elemento il cui id è ‘welcome’ sia degli
+elementi il cui class name è ‘color’.
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Homepage</title>
+</head>
+<body>
+ <h1>Homepage</h1>
+ <p id=”welcome”>Benvenuti!</p>
+ <ul>
+ <li class="color">Giallo</li>
+ <li class="color">Blu</li>
+ </ul>
+</body>
+</html>
+
+RISPOSTA: 
+#welcome, .color{
+background-color: darkgreen
+} 
+In questo modo lo stile verrà applicato se l'id è welcome, se ha class color, se è entrambi.
+
+#welcome ~ .color {
+background-color: darkgreen
+} 
+per selezionare ogni elemento .color che si trova dopo l'elemento #welcome
+
+
+5. Scrivere l’espressione per creare un hyperlink che conduce a www.avanade.com,
+inserendo come testo ‘descrittivo’ Avanade.
+
+RISPOSTA: 
+<a href="https://www.avanade.com/">Avanade</a>
+
+6. Scegli l’elemento HTML corretto per avere l’heading più grande:
+a. <head>
+b. <h6>
+c. <h1>
+d. <header>
+
+RISPOSTA:
+
+c. <h1>

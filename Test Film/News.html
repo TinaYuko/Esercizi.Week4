@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>News</title>
+    <link href="Film.css" rel="stylesheet" />
+    <script src="FilmJava.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+        <body style="background-color: black" onload=" checkRegistredUser()">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding:10px; font-family:'Courier New'">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="Homepage.html">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <img height="385" src="https://www.ucicinemas.it/media/movie/slider/ov-venom-let-there-be-carnage/1.jpg" class="rounded float-end" alt="...">
+
+                <form id="formLogin" onsubmit="save(); hideForm();">
+                    <div class="mb-3">
+                        <label class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nome*">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email*" onchange="change()" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Inserisci il tuo messaggio</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <br /><br />
+                    <input id="buttonSubscribe" type="submit" class="button" value="Subscribe" disabled />
+                </form>
+
+
+
+            </div>
+            <footer style="background-color: darkred; padding: 10px; align-self:end;">
+                <p>
+                    &copy; 2021 | Martina Mattana |
+                </p> 
+                <div>
+                    <button id="unsubscribeButton" class="button" type="button" style="display:none" onclick="unsubscribe()">Unsubscribe</button>
+                </div>
+            </footer>
+
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        </body>
+</html>
